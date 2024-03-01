@@ -14,7 +14,7 @@ with open(file_path, newline='') as csvfile:
         name, birthdate = row
         data.append((name, birthdate))
 
-# Get today's month and day
+# Get today's month and day.
 today_month_day = datetime.now().strftime("%m-%d")
 
 for person in data:
