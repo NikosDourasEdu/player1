@@ -6,7 +6,7 @@ data = []
 
 file_name = "data1.csv"
 
-file_path = f"{script_dir}\data1.csv"
+file_path = f"{script_dir}/data1.csv"
 
 with open(file_path, newline='') as csvfile:
     reader = csv.reader(csvfile)
