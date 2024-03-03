@@ -17,10 +17,11 @@ with open(file_path, newline='') as csvfile:
 
 # Get today's month and day.
 today_month_day = datetime.now().strftime("%m-%d")
-
+this_year = datetime.now().year
 for person in data:
     name, birthdate = person
     if today_month_day == birthdate[5:]:
-        print(f"\nHello {name}! Happy birthday!!!!!!!!!!!!!!!!!!!!! You were born on {birthdate}")
+        age =  this_year - int(birthdate[0:4])
+        print(f"Hello {name}! Happy birthday!!! You were born on {birthdate}, so you are turning {age}")
     # else:
         # print(f"Hello {name}! You were born on {birthdate}")
