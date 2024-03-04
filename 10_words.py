@@ -1,11 +1,12 @@
 from datetime import datetime
 import csv, os
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
 data = []
 
 file_name = "data1.csv"
 
-file_path = os.path.join(os.path.expanduser("~"), "Desktop", "myProjects", "player1", file_name)
+file_path = f"{script_dir}\data1.csv"
 
 with open(file_path, newline='') as csvfile:
     reader = csv.reader(csvfile)
