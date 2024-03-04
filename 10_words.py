@@ -22,5 +22,5 @@ for person in data:
     name, birthdate = person
     if today_month_day == birthdate[5:]:
         print(f"\nHello {name}! Happy birthday!!!!!!!!!!!!!!!!!!!!! You were born on {birthdate}")
-    else:
-        print(f"Hello {name}! You were born on {birthdate}")
+    # else:
+        # print(f"Hello {name}! You were born on {birthdate}")
